@@ -28,7 +28,7 @@
                             <img src="img/logo.png" alt="logo travelista">
                         </a>
                     </div>
-                    <div>
+                    <div class="main_links">
                         <a href="index.html">Home</a>
                         <a href="hotels.html">Hotels</a>
                         <a href="contact.html">contact</a>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="pics_in_row">
                     <div class="presentation_card">
-                        <div class="pic_box blury_2">
+                        <div class="pic_box ">
                             <img src="img/d1.jpg" alt="mountain river">
                         </div>
                         <div class="card_title">
@@ -74,6 +74,9 @@
                             <h3>Dream City</h3>
                             <span>Paris</span>
                         </div>
+                        <div class="btn btn_hidden">
+                            <a href="#">$150</a>
+                        </div>
                     </div>
                     <div class="presentation_card">
                         <div class="pic_box">
@@ -82,6 +85,9 @@
                         <div class="card_title">
                             <h3>Cloud Mountain</h3>
                             <span>Sri Lanka</span>
+                        </div>
+                        <div class="btn btn_hidden">
+                            <a href="#">$150</a>
                         </div>
                     </div>
                 </div>
@@ -302,11 +308,11 @@
         </section>
         <!--find your package-->
         <section>
-            <div class="container">
-                <div>
+            <div class="container section_double">
+                <div class="double_txt">
                     <h2>Did not find your Package?
                         <span>Feel free to ask us.</span>
-                        <span>We‘ll make it for you</span>
+                        <span>We'll make it for you</span>
                     </h2>
                     <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.
                     </p>
@@ -326,17 +332,17 @@
                     <h2>Latest from Our Blog</h2>
                     <p>With the exception of Nietzsche, no other madman has contributed so much to human sanity as has.</p>
                 </div>
-                <div class="pics_in_row">
-                    <div class="pic_card">
-                        <div class="pic_box">
+                <div class="pics_in_row ">
+                    <div class=" section_triple">
+                        <div class="pic_box focus">
                             <img src="img/b1.jpg" alt="sit-on-it">
                         </div>
-                        <div>
-                            <div class="btn btn_yellow">
-                                <a href="#">Travel</a>
+                        <div class="blog_button">
+                            <div class=" btn_blog">
+                                <a href="blog.html">Travel</a>
                             </div>
-                            <div class="btn btn_yellow">
-                                <a href="#">Life Style</a>
+                            <div class=" btn_blog">
+                                <a href="blog.html">Life Style</a>
                             </div>
                         </div>
                         <div>
@@ -345,16 +351,16 @@
                             <span>31st January,2018</span>
                         </div>
                     </div>
-                    <div class="pic_card">
-                        <div class="pic_box">
+                    <div class=" section_triple">
+                        <div class="pic_box focus">
                             <img src="img/b2.jpg" alt="horse">
                         </div>
-                        <div>
-                            <div class="btn btn_yellow">
-                                <a href="#">Travel</a>
+                        <div class="blog_button">
+                            <div class=" btn_blog">
+                                <a href="blog.html">Travel</a>
                             </div>
-                            <div class="btn btn_yellow">
-                                <a href="#">Life Style</a>
+                            <div class="btn_blog">
+                                <a href="blog.html">Life Style</a>
                             </div>
                         </div>
                         <div>
@@ -363,16 +369,16 @@
                             <span>31st January,2018</span>
                         </div>
                     </div>
-                    <div class="pic_card">
-                        <div class="pic_box">
+                    <div class=" section_triple">
+                        <div class="pic_box focus">
                             <img src="img/b3.jpg" alt="hicking">
                         </div>
-                        <div>
-                            <div class="btn btn_yellow">
-                                <a href="#">Travel</a>
+                        <div class="blog_button">
+                            <div class=" btn_blog">
+                                <a href="blog.html">Travel</a>
                             </div>
-                            <div class="btn btn_yellow">
-                                <a href="#">Life Style</a>
+                            <div class=" btn_blog">
+                                <a href="blog.html">Life Style</a>
                             </div>
                         </div>
                         <div>
@@ -386,72 +392,78 @@
         </section>
     </main>
     <footer>
-        <div>
-            <h4>about agency</h4>
-            <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point
-            </p>
-        </div>
-        <div>
-            <h4>navigation links</h4>
-            <div>
-                <a href="#">home</a>
-                <a href="#">Feature</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
+        <div class="container">
+            <div class=" footer">
+                <div>
+                    <h4>about agency</h4>
+                    <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point
+                    </p>
+                </div>
+                <div class="footer_nav">
+                    <h4>navigation links</h4>
+                    <div class="footer_links">
+                        <div class="col">
+                            <a href="#">home</a>
+                            <a href="#">Feature</a>
+                            <a href="#">Services</a>
+                            <a href="#">Portfolio</a>
+                        </div>
+                        <div class="col">
+                            <a href="#">home</a>
+                            <a href="#">Feature</a>
+                            <a href="#">Services</a>
+                            <a href="#">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4>newsletter</h4>
+                    <p>For business professionals caught between high OEM price and mediocre print and graphic output.</p>
+                    <div class="input_cell">
+                        <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
+                        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div>
+                    <h4>instafeed</h4>
+                    <div class="mini-gallery">
+                        <div>
+                            <img src="img/i1.jpg" alt="peppers">
+                        </div>
+                        <div>
+                            <img src="img/i2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/i3.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/i4.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/i5.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/i6.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/i7.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="img/i8.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="#">home</a>
-                <a href="#">Feature</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
-            </div>
-        </div>
-        <div>
-            <h4>newsletter</h4>
-            <p>For business professionals caught between high OEM price and mediocre print and graphic output.</p>
-            <div>
-                <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
-                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-            </div>
-        </div>
-        <div>
-            <h4>instafeed</h4>
-            <div class="mini-gallery">
+            <div class="footer_bottom">
                 <div>
-                    <img src="img/i1.jpg" alt="peppers">
+                    <p>Copyright © 2018 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by<a href="#">Colorlib</a></p>
                 </div>
-                <div>
-                    <img src="img/i2.jpg" alt="">
+                <div class="go_social">
+                    <a href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="http://www.dribbble.com"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                    <a href="http://www.behance.com"><i class="fa fa-behance" aria-hidden="true"></i></a>
                 </div>
-                <div>
-                    <img src="img/i3.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/i4.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/i5.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/i6.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/i7.jpg" alt="">
-                </div>
-                <div>
-                    <img src="img/i8.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div>
-            <div>
-                <p>Copyright © 2018 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#">Colorlib</a></p>
-            </div>
-            <div>
-                <a href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="http://www.dribbble.com"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                <a href="http://www.behance.com"><i class="fa fa-behance" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>

@@ -8,6 +8,15 @@ section{
 .container{
     width: 1140px;
     margin: 0 auto;
+    @media screen and (max-width:1200px){
+        width: 700px;
+    }
+    @media screen and (max-width:680px){
+        width: 500px;
+    }
+    @media screen and (max-width:500px){
+        width: 400px;
+    }
 }
 h1{
     font-size: 40px;
@@ -25,17 +34,41 @@ p, span{
 }
 a{
     text-decoration: none;
+    color: $couleur_txt;
+}
+@media screen and (max-width:680px){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    p, span, a{
+        font-size: 10px;
+    }
 }
 .secondary_title{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    @media screen and (max-width:500px){
+        text-align: center;
+      }
 }
 .pics_in_row{
     position: relative;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width:500px){
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+     }
 }
 .pic_card{
     width: calc(100% / 4);
@@ -46,7 +79,13 @@ a{
         display: inline-block;
         padding-top: 10px;
         color: $couleur_txt;
+        @media screen and (max-width:680px){
+            font-size: 14px;
+        }
     }
+    @media screen and (max-width:500px){
+        width: 100%;
+     }
 }
 .pic_card_effect{
     &:hover{
@@ -57,16 +96,58 @@ a{
             transform: scale(1.2) rotate(5deg);
         }
     }
-    .pic_box{
-        overflow: hidden;
-    }
 }
 .pic_box{
-    overflow: hidden;    
+    overflow: hidden;
     img{
         display: block;
         max-width: 100%;
         object-fit: contain;
         transition: 0.2s all ease-in-out;
+        @media screen and (max-width:500px){
+            width: 100%;
+          }
+    }
+    @media screen and (max-width:680px){
+        margin-right: 5px;
+    }
+}
+.focus{
+    &:hover{
+        img{
+            transform: scale(1.2);
+        }
+    }
+}
+.section_double{
+    display: flex;
+    height: 361px;
+    div{
+        width: calc(100% / 2);
+        @media screen and (max-width:500px){
+            width: 100%;
+          }
+    }
+    @media screen and (max-width:500px){
+        flex-direction: column;
+      }
+}
+.double_txt{
+    padding: 15px;
+    height: 361px;
+    @media screen and (max-width:500px){
+        text-align: center;
+      }
+    h2{
+        font-size: 25px;
+        @media screen and (max-width:680px){
+            font-size: 10px ;
+        }
+    }
+}
+.big_pic{
+    img{
+        display: block;
+        max-width: 100%;
     }
 }

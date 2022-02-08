@@ -2,6 +2,7 @@ nav{
     div{
         z-index: 10;
     }
+
 }
 .nav_links{
     display: flex;
@@ -15,9 +16,17 @@ nav{
             &:hover{
                 color: $yellow;
             }
+            @media screen and (max-width:500px){
+                padding: 10px;
+             }
         }
     }
 }
 .blury{
     background: rgba($color: #f8f7f7, $alpha: 0.2);
+}
+.main_links{
+    @media screen and (max-width:500px){
+        display: none;
+    }
 }
