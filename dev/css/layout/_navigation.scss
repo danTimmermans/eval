@@ -18,7 +18,7 @@ nav{
             }
             @media screen and (max-width:500px){
                 padding: 10px;
-             }
+            }
         }
     }
 }
@@ -28,5 +28,40 @@ nav{
 .main_links{
     @media screen and (max-width:500px){
         display: none;
+    }
+}
+.mini-burger{
+    width: 15px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    position: fixed;
+    right: 60px;
+    top: 85px;
+    display: none;
+    @media screen and (max-width:500px){
+        display: flex;
+    }
+}
+.menu-pop{
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    height: 100vh;
+    width: 30%;
+    background: #000;
+    z-index: 20;
+    &.active{
+        left: 0;
+    }
+    .menu-pop-links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        a{
+            color: #fff;
+            padding: 10px 0;
+        }
     }
 }

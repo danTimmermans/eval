@@ -77,10 +77,13 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 10px 0 0;
-    @media screen and (max-width:1200px){
-        width: 100%;
+    @media screen and (max-width:1080px){
+        width: 80%;
     }
     @media screen and (max-width:680px){
         width: 70%;
+    }
+    @media screen and (max-width:500px){
+        width: 30%;
     }
 }

@@ -1,0 +1,80 @@
+.colonnes{
+   display: flex;
+   padding: 20px;
+}
+.main_colonne{
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.bg-col{
+    img{
+        display: block;
+        max-width: 100%;
+    }
+}
+.astronomy{
+    display: flex;
+    padding: 0 25px;
+}
+.averages{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    div{
+        padding: 20px;
+        i{
+            padding: 5px;
+        }
+        a{
+            padding: 5px;
+            &:hover{
+                color: $yellow;
+            }
+        }
+    }
+}
+.astro_txt{
+    padding-top: 20px ;
+}
+.white_bg{
+    background: rgb(233, 229, 229);
+    padding: 20px;
+}
+.prev_post{
+    display: flex;
+    justify-content: space-between;
+}
+.post{
+    display: flex;
+    h3{
+        margin: 0;
+    }
+}
+.user_pic{
+    img{
+        display: block;
+        padding:0 10px;
+    }
+}
+.post_txt{
+    padding: 10px;
+}
+.comments_title{
+text-align: center;
+}
+.comments{
+    display: flex;
+    justify-content: space-between;
+}
+.users{
+    display: flex;
+    h4, p{
+        margin: 0;
+    }
+    p{
+        color: grey;
+        padding: 5px 0;
+    }
+}

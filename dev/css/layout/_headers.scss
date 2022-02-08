@@ -1,6 +1,5 @@
 header{
-    position: relative;
-    background: url("../img/hero-bg.jpg") center/cover;
+    position: relative;    
     top: 0;
     left: 0;
     width: 100%;
@@ -28,5 +27,26 @@ header{
             padding-bottom: 15px;
             color: #fff;
         }
+    }
+}
+.header_home{
+    background: url("../img/hero-bg.jpg") center/cover;
+}
+.header_blog{
+    background: url("../img/hero-bg.jpg") center/cover;
+    height: 40vh;
+}
+.title_blog{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    color: #fff;
+    z-index: 10;
+}
+.path{
+    text-align: center;
+    span, i{
+        padding:0 10px;
     }
 }
