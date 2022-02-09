@@ -1,0 +1,51 @@
+.location{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 2em;
+ @media screen and (max-width:680px){
+    display: flex;
+    flex-direction: column;
+}
+}
+.location-cell{
+    display: flex;
+    padding: 10px;
+    div{
+        padding: 10px;
+        i{
+            color: $yellow;
+            font-size: 26px;
+        }
+        h3{
+            margin: 0px;
+        }
+        p{
+            font-size: 13px;
+            margin: 0;
+        }
+    }
+}
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    div{
+        margin: 20px 0;
+    }
+    .btn{
+        position: absolute;
+        top: 85%;
+        right: 0;
+        width: 50%;
+        @media screen and (max-width:680px){
+            width: 40%;
+        }
+        @media screen and (max-width:500px){
+            width: 30%;
+        }
+    }
+}
+iframe{
+    max-width: 100%;
+    padding-top: 50px;
+}

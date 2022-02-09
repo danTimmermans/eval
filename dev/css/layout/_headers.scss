@@ -26,8 +26,17 @@ header{
         p, span{
             padding-bottom: 15px;
             color: #fff;
+            @media screen and (max-width:500px){
+                padding-bottom: 0;
+              }
         }
     }
+    @media screen and (max-width:680px){
+        height: 70vh;
+      }
+    @media screen and (max-width:500px){
+        height: 60vh;
+      }
 }
 .header_home{
     background: url("../img/hero-bg.jpg") center/cover;

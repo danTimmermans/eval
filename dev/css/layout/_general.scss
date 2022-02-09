@@ -3,7 +3,7 @@ body{
  color: $couleur_txt;
 }
 
-section{
+.section-spacing{
     padding: 100px 0;
 }
 article{
@@ -113,14 +113,11 @@ img{
     overflow: hidden;
     img{
         display: block;
-        object-fit: contain;
+        object-fit: cover;
         transition: 0.2s all ease-in-out;
         @media screen and (max-width:500px){
             width: 100%;
-          }
-    }
-    @media screen and (max-width:680px){
-        margin-right: 5px;
+        }
     }
 }
 .focus{
@@ -132,23 +129,24 @@ img{
 }
 .section_double{
     display: flex;
+    justify-content: flex-start;
     height: 361px;
     div{
         width: calc(100% / 2);
         @media screen and (max-width:500px){
             width: 100%;
-          }
+        }
     }
     @media screen and (max-width:500px){
         flex-direction: column;
-      }
+    }
 }
 .double_txt{
     padding: 15px;
     height: 361px;
     @media screen and (max-width:500px){
         text-align: center;
-      }
+    }
     h2{
         font-size: 25px;
         @media screen and (max-width:680px){
@@ -159,5 +157,11 @@ img{
 .big_pic{
     img{
         display: block;
+        @media screen and (max-width:500px){
+            width: 90%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+        }
     }
 }
