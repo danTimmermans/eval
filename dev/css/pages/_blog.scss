@@ -1,12 +1,29 @@
+.body_bg{
+    background-color: rgb(236, 236, 236);
+}
+article{
+    padding: 10px;
+}
+.border{
+    border: 1px solid rgb(221, 220, 220);
+}
+.border-bottom{
+    border-bottom:  1px solid rgb(221, 220, 220); ;
+}
 .colonnes{
    display: flex;
    padding: 20px;
-}
-.main_colonne{
-    max-width: 70%;
-    display: flex;
+   @media screen and (max-width:680px){
     flex-direction: column;
 }
+}
+.main_colonne{
+    width: 70%;
+    @media screen and (max-width:680px){
+        width: 100%;
+    }
+}
+
 .bg-col{
     img{
         display: block;
@@ -16,6 +33,10 @@
 .astronomy{
     display: flex;
     padding: 0 25px;
+    @media screen and (max-width:500px){
+        display: flex;
+        flex-direction: column;
+    }
 }
 .averages{
     width: 100%;
@@ -34,17 +55,34 @@
             }
         }
     }
+    @media screen and (max-width:680px){
+        div{
+            padding: 8px;
+            i{
+                font-size: 6px;
+                padding: 2px;
+            }
+        }
+    }
+    @media screen and (max-width:500px){
+        align-items: flex-start;
+    }
 }
 .astro_txt{
     padding-top: 20px ;
 }
 .white_bg{
-    background: rgb(233, 229, 229);
+    background: #fff;
     padding: 20px;
 }
 .prev_post{
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width:500px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .post{
     display: flex;
@@ -53,9 +91,25 @@
     }
 }
 .user_pic{
+    position: relative;
     img{
         display: block;
         padding:0 10px;
+    }
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    padding: 10px;
+    i{
+        color: #fff;
+        font-size: 25px;
+    }
+    &:hover{
+        opacity: 1;
     }
 }
 .post_txt{
@@ -76,5 +130,140 @@ text-align: center;
     p{
         color: grey;
         padding: 5px 0;
+    }
+}
+.contact-form{
+    text-align: center;
+    max-width: 100%;
+    input{
+        padding: 10px;
+        width: 100%;
+        border: none;
+    }
+    div{
+        padding: 10px;
+    }
+}
+input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+}
+textarea{
+    width: 100%;
+    padding-left: 5px;
+    resize: none;
+    border: none;
+    color: $couleur_txt;
+}
+.form-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    div{
+        padding: 0;
+    }
+    @media screen and (max-width:680px){
+        display: flex;
+        flex-direction: column;
+    }
+}
+.submit{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 30%;
+}
+// colone droite
+.right_colonne{
+    width: 30%;
+    padding-top: 10px;
+    @media screen and (max-width:680px){
+        width: 100%;
+    }
+
+}
+.search{
+    padding: 20px 0;
+    input{
+    background: $yellow;
+    color: #fff;
+    border-radius: 50px;
+    &::placeholder{
+        color: #fff;
+    }
+    }
+}
+.barbante{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    div{
+        padding: 10px;
+        a{
+            padding: 5px;
+        }
+        }
+}
+.rond_pic{
+    img{
+        border-radius: 50px;
+    }
+}
+.ticket{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.ticket_txt{
+    padding: 0 10px;
+}
+.PX{
+    max-width: 100%;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+        font-size: 20px;
+        color: grey;
+    }
+    @media screen and (max-width:680px){
+        width: 300px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+.categories{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(221, 220, 220);
+        span{
+            color: grey;
+            
+        }
+}
+.posts{
+    text-align: center;
+    div{
+        margin: 15px 0;
+    }
+}
+.email{
+    display: flex;
+    input{
+        height: 48px;
+    }
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    div{
+        margin: 5px;
     }
 }

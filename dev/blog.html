@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.min.css">
     <title>Magical travel blog page</title>
 </head>
-<body>
+<body class="body_bg">
     <header class="header_blog" >
         <div class="container">
             <nav>
@@ -52,8 +52,10 @@
         </div>
     </header>
     <main class="container colonnes">
+        <!--colonne gauche-->
         <div class="main_colonne">
             <div>
+                <!--astronomy-->
                 <article>
                     <div class="bg-col">
                         <img src="img/feature-img1.jpg" alt="">
@@ -94,12 +96,14 @@
                         </div>
                     </div>
                 </article>
+                <!--encadré-->
                 <article>
                     <div class="white_bg">
                         <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
                     </div>
                 </article>
-                <article>
+                <!--double pic-->
+                <article class=" border-bottom">
                     <div class="pics_in_row">
                         <div>
                             <img src="img/post-img1.jpg" alt="flowers">
@@ -113,29 +117,37 @@
                         <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
                     </div>
                 </article>
+                <!--user prev-->
                 <article>
                     <div class="prev_post">
                         <div class="post">
                             <div class="user_pic">
                                 <img src="img/c3.jpg" alt="girl">
+                                <div class="arrow">
+                                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                </div>
                             </div>
                             <div class="post_txt">
                                 <span>Prev Post</span>
                                 <h3>Space The Final Frontier</h3>
                             </div>
                         </div>
-                        <div class="post">
+                        <div class="post prev">
                             <div class="post_txt">
                                 <span>Prev Post</span>
                                 <h3>Space The Final Frontier</h3>
                             </div>
                             <div class="user_pic">
                                 <img src="img/c3.jpg" alt="girl">
+                                <div class="arrow">
+                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </article>
-                <article>
+                <!--comments-->
+                <article class="border">
                     <div class="comments_title">
                         <h3>05 Comments</h3>
                     </div>
@@ -234,12 +246,182 @@
                             <div class="btn btn_white">
                                 <a href="#">REPLY</a>
                             </div>
+                        </div>
+                    </div>
+                </article>
+                <!--form-->
+                <article class="border">
+                    <div class=" contact-form">
+                        <h3>Leave a Comment</h3>
+                        <div class="form-info">
+                            <div>
+                                <input type="text" id="name" name="name" required minlength="3" maxlength="16" size="10" placeholder="Enter Name">
+                            </div>
+                            <div>
+                                <input type="email" id="email" pattern=".+@globex\.com" size="30" placeholder="Enter Email Adress" required>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" id="subject" name="subject" required minlength="3" maxlength="25" size="10" placeholder="Subject">
+                        </div>
+                        <div >
+                            <textarea id="message" name="story" rows="8" cols="33"> Message</textarea>
+                        </div>
+                        <div class="btn btn_yellow submit">
+                            <a href="#">Post comment</a>
                         </div>
                     </div>
                 </article>
             </div>
         </div>
-        <div>test</div>
+        <!--colonne droite-->
+        <div class="right_colonne">
+            <!--input search-->
+            <article class="border">
+                <div class="search input">
+                    <input type="text" id="name" name="name" placeholder="Search posts">
+                </div>
+            </article>
+            <!--charline la barbante-->
+            <article class="border">
+                <div class="barbante">
+                    <div class="user_pic rond_pic">
+                        <img src="img/c4.jpg" alt="user">
+                    </div>
+                    <div>
+                        <h4>Charline la Barbante</h4>
+                        <span>Senior je sé-tout</span>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    </div>
+                    <div>
+                        <p>Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. </p>
+                    </div>
+                </div>
+            </article>
+            <!--popular posts-->
+            <article class="border">
+                <div>
+                    <div class="btn btn_yellow">
+                        <a href="#">Popular Posts</a>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <img src="img/pp1.jpg" alt="walkman">
+                    <div class="ticket_txt">
+                        <h5>Space the final frontier</h5>
+                        <span>02 Hours Ago</span>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <img src="img/pp1.jpg" alt="walkman">
+                    <div class="ticket_txt">
+                        <h5>Space the final frontier</h5>
+                        <span>02 Hours Ago</span>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <img src="img/pp1.jpg" alt="walkman">
+                    <div class="ticket_txt">
+                        <h5>Space the final frontier</h5>
+                        <span>02 Hours Ago</span>
+                    </div>
+                </div>
+                <div class="ticket">
+                    <img src="img/pp1.jpg" alt="walkman">
+                    <div class="ticket_txt">
+                        <h5>Space the final frontier</h5>
+                        <span>02 Hours Ago</span>
+                    </div>
+                </div>
+            </article>
+            <!--PX-->
+            <article class="border">
+                <div class="PX">
+                    <span>300X250 PX AD GOES HERE</span>
+                </div>
+            </article>
+            <!--post cat-->
+            <article class="border">
+                <div class="posts">
+                    <div class="btn btn_yellow">
+                        <a href="#">Posts Categories</a>
+                    </div>
+                    <div class="categories">
+                        <span>Technologie</span>
+                        <span>37</span>
+                    </div>
+                    <div class="categories">
+                        <span>Technologie</span>
+                        <span>37</span>
+                    </div>
+                    <div class="categories">
+                        <span>Technologie</span>
+                        <span>37</span>
+                    </div>
+                    <div class="categories">
+                        <span>Technologie</span>
+                        <span>37</span>
+                    </div>
+                    <div class="categories">
+                        <span>Technologie</span>
+                        <span>37</span>
+                    </div>
+                    <div class="categories">
+                        <span>Technologie</span>
+                        <span>37</span>
+                    </div>
+                    <div class="categories">
+                        <span>Technologie</span>
+                        <span>37</span>
+                    </div>
+                </div>
+            </article>
+            <!--newsletter-->
+            <article class="border">
+                <div class="posts">
+                    <div class="btn btn_yellow">
+                        <a href="#">Posts Categories</a>
+                    </div>
+                    <div>
+                        <p>Boot camps have its supporters andit sdetractors. Some people do not understand .</p>
+                    </div>
+                    <div class="email">
+                        <div>
+                            <input type="email" id="email" pattern=".+@globex\.com" size="30" placeholder="Enter Email " required>
+                        </div>
+                        <div class="btn btn_yellow">
+                            <a href="#">Subscribe</a>
+                        </div>
+                    </div>
+                    <div>
+                        <span>You can't NEVER unsubscrive!!! </span>
+                    </div>
+                </div>
+            </article>
+            <!--tag cloud-->
+            <article class="border">
+                <div class="posts">
+                    <div class="btn btn_yellow">
+                        <a href="#">Tag Clouds</a>
+                    </div>
+                    <div class="tags">
+                        <div class="btn btn_white">TAGgg</div>
+                        <div class="btn btn_white">TAG</div>
+                        <div class="btn btn_white">TAGg </div>
+                        <div class="btn btn_white">TAG</div>
+                        <div class="btn btn_white">TAGhhh</div>
+                        <div class="btn btn_white">TAGfgh</div>
+                        <div class="btn btn_white">TAG</div>
+                        <div class="btn btn_white">TAGxx</div>
+                    </div> 
+                </div>
+            </article>
+        </div>
     </main>
     <footer>
         <div class="container">
