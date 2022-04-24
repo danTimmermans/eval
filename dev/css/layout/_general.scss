@@ -133,7 +133,6 @@ img{
 .section_double{
     display: flex;
     justify-content: flex-start;
-    height: 361px;
     div{
         width: calc(100% / 2);
         @media screen and (max-width:500px){
@@ -160,14 +159,18 @@ img{
 }
 .big_pic{
     width: 50%;
+    @media screen and (max-width:500px){
+        width: 100%;
+    }
     img{
         display: block;
         width: 100%;
         @media screen and (max-width:500px){
-            width: 90%;
+            // display: none;
+            width: 100%;
             position: relative;
-            left: 50%;
-            transform: translate(-50%);
+            // left: 50%;
+            // transform: translate(-50%);
         }
     }
 }
