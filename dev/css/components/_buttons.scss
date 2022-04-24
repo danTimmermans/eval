@@ -71,6 +71,9 @@
             font-size: 8px;
             padding: 5px;
         }
+        @media screen and (max-width:500px){
+           font-size: 6px;
+        }
     }
 }
 .blog_button{
