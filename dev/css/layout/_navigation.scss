@@ -10,6 +10,9 @@ nav{
     align-items: center;
     div{
         padding: 20px;
+        @media screen and (max-width:500px){
+            padding: 10px;
+        }
         a{
             padding: 15px;
             color: #fff;
@@ -31,14 +34,14 @@ nav{
     }
 }
 .mini-burger{
-    width: 15px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
-    position: fixed;
-    right: 60px;
-    top: 85px;
-    display: none;
+    position: relative;
+    left: -15px;
+    // top: 3px;
+    // display: none;
     @media screen and (max-width:500px){
         display: flex;
     }
