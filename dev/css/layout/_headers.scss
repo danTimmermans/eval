@@ -44,6 +44,9 @@ header{
 .header_blog{
     background: url("../img/hero-bg.jpg") center/cover;
     height: 40vh;
+    @media screen and (max-width:500px){
+        height: 60vh;
+      }
 }
 .title_blog{
     position: absolute;
@@ -58,4 +61,9 @@ header{
     span, i{
         padding:0 10px;
     }
+    @media screen and (max-width:500px){
+        span{
+            font-size: 7px;
+        }
+      }
 }

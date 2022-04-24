@@ -142,6 +142,7 @@ img{
     }
 }
 .double_txt{
+    width: 50%;
     padding: 15px;
     height: 361px;
     @media screen and (max-width:500px){
@@ -155,8 +156,10 @@ img{
     }
 }
 .big_pic{
+    width: 50%;
     img{
         display: block;
+        width: 100%;
         @media screen and (max-width:500px){
             width: 90%;
             position: relative;
